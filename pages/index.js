@@ -144,7 +144,7 @@ export default function Home() {
               className='w-[30rem] justify-self-end' alt="" />
             <div className='space-y-6'>
               <p className='text-2xl font-bold max-w-lg'>Engineered And Optimization By Conveying. Him Plate You Allow Built Grave.</p>
-        
+
               <p className='max-w-lg'>Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes.</p>
               <div className='space-y-6'>
                 {[1, 2, 3].map(() => {
@@ -159,28 +159,173 @@ export default function Home() {
               <button className='bg-red-500 text-white font-semibold py-3 rounded-full px-6'>read More</button>
             </div>
           </div>
-        </section> 
+        </section>
 
-          {/* center section */}
-          <section className='pt-32 pb-20'>
+        {/* center section */}
+        <section className='pt-16 pb-10'>
           <div className='max-w-md mx-auto space-y-3'>
             <h4 className='text-3xl text-red-500 text-center font-bold'>INNOVATIVE TEAM</h4>
             <p className='text-xl text-center tracking-wide'>Meet Our Awesome And Expert Team Members</p>
           </div>
-        </section> 
+        </section>
 
         {/* innovation team */}
-        <section>
-        <div className='max-w-6xl mx-auto grid grid-cols-3'>
-         {[1,2,3].map((e,idx) => {
-          return (
-            <div>
-              
-            </div>
-          )
-         })}
-        </div>
+        <section className='mb-32'>
+          <div className='max-w-6xl mx-auto grid grid-cols-3 gap-6'>
+            {[1, 2, 3].map((e, idx) => {
+              return (
+                <div className='shadow-xl'>
+                  <img src="https://validthemes.live/themeforest/dostart/assets/img/team/7.jpg" alt="" />
+                  <div className='text-center py-7'>
+                    <p className='font-bold text-lg'>Ahmed Kamal</p>
+                    <p className='text-lg font-semibold text-red-500'>Ahmed Kamal</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
         </section>
+
+
+        {/* center section */}
+        <section className='pt-32 bg-[#f9f9f9]'>
+          <div className='max-w-md mx-auto space-y-3'>
+            <h4 className='text-3xl text-red-500 text-center font-bold'>CUSTOMER REVIEW</h4>
+            <p className='text-xl text-center tracking-wide'>What People Say About Us</p>
+          </div>
+        </section>
+        {/* first section with image is right here */}
+        <section>
+          <div className="grid grid-cols-2 gap-7 py-20 bg-[#f9f9f9]">
+            <img src="https://validthemes.live/themeforest/dostart/assets/img/team/4.jpg"
+              className='w-[15rem] justify-self-end' alt="" />
+            <div className='self-center'>
+              <p className='max-w-lg'>Understood instrument or do connection no appearance do invitation.
+                Dried quick round it or order. Add past see west felt did any. plate you
+                share. My resolve arrived is we chamber be removal.</p>
+              <p className='font-bol text-xl'>Makhon Daino</p>
+              <h1>Comapny owner</h1>
+              <div className='flex gap-2 mt-5'>
+
+                {[1, 2, 3].map(() => {
+                  return (
+                    <div className='h-4 w-4 rounded-full bg-red-500'> </div>
+                  )
+                })}
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        {/* center section on questions and answers*/}
+        <section className='py-16'>
+          <div className='max-w-md mx-auto space-y-3'>
+            <h4 className='text-3xl text-red-500 text-center font-bold'>QUSTION AND ANSWER</h4>
+            <p className='text-xl text-center tracking-wide'>Most Common And Important Answer</p>
+          </div>
+        </section>
+
+        {/* first section with image is right here */}
+        <section>
+          <div className="grid grid-cols-2 gap-8 py-3">
+            <img src="img2.png"
+              className='w-[35rem] h-full justify-self-end self-start' alt="" />
+            <div className='space-y-6 self-center'>
+              <h1>Designed for startups
+                with expert developer</h1>
+              <p className='max-w-lg'>She wholly fat who window extent either formal. Removing welcomed civility or hastened is. Justice elderly but perhaps expense six her are another passage. Full her ten open fond walk not down.For request general express unknown are.</p>
+              <p className='max-w-lg'>He in just mr door body held john down he. So journey greatly or garrets. Draw door kept do so come on open mean. Estimating stimulated how reasonably precaution diminution she simplicity sir but..</p>
+              <div className='space-y-4'>
+                {[1, 2, 3].map(() => {
+                  return (
+                    <div className='flex items-center gap-4 '>
+                      <p className='bg-red-500 p-2 px-4 rounded-full'>1</p>
+                      <p>How long should a business plan be?</p>
+                    </div>
+                  )
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Blog center section */}
+        <section className='py-32 bg-[#f9f9f9]'>
+          <div className='max-w-md mx-auto space-y-3'>
+            <h4 className='text-3xl text-red-500 text-center font-bold'>LATEST BLOG</h4>
+            <p className='text-xl text-center tracking-wide'>Have A Look To Our Latest Blog</p>
+          </div>
+        </section>
+
+        {/*blog */}
+        <section className='mb-32 bg-[#f9f9f9] pb-40'>
+          <div className='max-w-6xl mx-auto grid grid-cols-3 gap-6'>
+            {[1, 2, 3].map((e, idx) => {
+              return (
+                <div className='shadow-xl'>
+                  <img src="https://validthemes.live/themeforest/dostart/assets/img/blog/2.jpg" alt="" />
+                  <div className='py-7 px-5 grid w-full space-y-6'>
+                    <p className='font-bold text-xl'>Become Latter But Nor Abroad
+                      Wisdom Waited</p>
+                    <p className='text-md text-gray-600'>Friendship sufficient assistance can
+                      prosperous met. As game he show it park do.
+                      Was has unknown few certain</p>
+                    <button className=' justify-self-end text-md text-red-500 font-bold'>Read More</button>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
+        {/* Contact center section */}
+        <section className='pb-20'>
+          <div className='max-w-md mx-auto space-y-3'>
+            <h4 className='text-3xl text-red-500 text-center font-bold'>CONTACT US</h4>
+            <p className='text-xl text-center tracking-wide'>Do You Have Any Questions?</p>
+          </div>
+        </section>
+
+        <section>
+          <div className='max-w-6xl mx-auto grid grid-cols-3'>
+            <div className='col-span-2 pb-16'>
+              <h1 className='text-3xl font-bold text-gray-700'>Let's Lalk About Your Idea</h1>
+              <form action="" className='mt-4 space-y-6'>
+                <input type="text" placeholder='Name' className='w-full focus:outline-none border border-gray-300 py-3 px-3' />
+                <div className='flex gap-4'>
+                  <input type="text" placeholder='Email' className='w-full focus:outline-none border border-gray-300 py-3 px-3' />
+                  <input type="text" placeholder='Phone' className='w-full focus:outline-none border border-gray-300 py-3 px-3' />
+                </div>
+
+                <textarea rows='14' type="text" placeholder='Tell us about project' className='w-full focus:outline-none border border-gray-300 py-3 px-3'></textarea>
+              </form>
+            </div>
+            <div>
+
+            </div>
+          </div>
+        </section>
+        {/* Google map imgae */}
+        <section className='max-w-[100rem] mx-auto'>
+          <img src="/img4.png" alt="" className=' object-cover object-fit object-center max-w-full' />
+        </section>
+
+        <footer className='py-24'>
+          <div className='max-w-6xl mx-auto grid grid-cols-4'>
+            <div>
+              <img src="https://validthemes.live/themeforest/dostart/assets/img/logo.png" alt="" />
+              <div>
+                <p>Celebrated conviction stimulated principles day.
+                  Sure fail or in said west. Right my front it wound
+                  cause fully am sorry if. She jointure goodness
+                  interest debating did outweigh.</p>
+              </div>
+            </div>
+
+          </div>
+        </footer>
       </main>
     </>
   )
