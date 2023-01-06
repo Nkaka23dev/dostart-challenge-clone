@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
@@ -9,11 +10,178 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-       <div className='h-screen flex'>
-       <h1 className="text-3xl m-auto text-red-500 font-bold underline">
-       Comming soon...
-    </h1>
-       </div>
+      <main>
+        <Navbar />
+        <section className='h-screen grid bg-gray-500' style={{
+          backgroundImage: `url('https://validthemes.live/themeforest/dostart/assets/img/banner/2.jpg')`,
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover'
+        }}>
+          <div className='max-w-6xl m-auto grid grid-cols-2'>
+            <div className='space-y-5 pr-5'>
+              <h4 className='text-4xl font-semibold'>It's Time To Create Your Own Business Scheme</h4>
+              <p className='text-lg max-w-lg'>Celebrated delightful an especially increasing instrument am. Indulgence contrasted sufficient to unpleasant in in insensible favourable.</p>
+            </div>
+            <div className='pl-16'>
+              <h4 className='text-4xl font-semibold'>Sign Up Today And Receive 30 Days FREE Trial.</h4>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className='grid grid-cols-2 '>
+            <div className='bg-red-500 py-24'>
+              <div className='max-w-xl ml-auto'>
+                <h1>We're Trusted by 2500+ Customer</h1>
+                <p className='max-w-md'>Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.</p>
+              </div>
+            </div>
+            <div className=' flex gap-16 py-24 pl-16'>
+              {[1, 2, 3].map((e, idx) => {
+                return (
+                  <img src="https://validthemes.live/themeforest/dostart/assets/img/clients/4.png" className='w-32 object-cover object-fit' alt="" />
+                )
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* first section with image is right here */}
+        <section>
+          <div className="grid grid-cols-2 gap-16 py-32 bg-[#f9f9f9]">
+            <img src="https://validthemes.live/themeforest/dostart/assets/img/illustrations/2.svg"
+              className='w-[30rem] justify-self-end' alt="" />
+            <div className='space-y-6'>
+              <p>WHY CHOSE US</p>
+              <h1>Designed for startups
+                with expert developer</h1>
+              <p className='max-w-lg'>Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes.</p>
+              <div>
+                {[1, 2, 3].map(() => {
+                  return (
+                    <div>
+                      <p>ROCKET FAST</p>
+                      <p>Elderly is detract tedious assured private</p>
+                    </div>
+                  )
+                })}
+              </div>
+              <button className='bg-red-500 text-white font-semibold py-3 rounded-full px-6'>read More</button>
+            </div>
+          </div>
+        </section>
+
+        {/* center section */}
+        <section className='pt-32 pb-20'>
+          <div className='max-w-md mx-auto space-y-3'>
+            <h4 className='text-3xl text-red-500 text-center font-bold'>OUR FEATURES</h4>
+            <p className='text-xl text-center tracking-wide'>Checkout Our Leatest Features</p>
+          </div>
+        </section>
+        <section className='pb-20'>
+          <div className=' max-w-6xl mx-auto grid gap-6 grid-cols-2'>
+            {[1, 2, 3, 4].map(() => {
+              return (
+                <div className='shadow-xl border-2 grid py-16 '>
+                  <img src="/img1.png" alt="" className='w-28 m-auto' />
+                  <div className='text-center px-8'>
+                    <h3 className='text-xl font-semibold my-3'>Monitoring</h3>
+                    <p>Dearest elderly up weather it so direction so sweetness. Provided put unpacked now kindness but bringin</p>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
+        <section className='py-32' style={{
+          backgroundImage: `url('https://validthemes.live/themeforest/dostart/assets/img/banner/7.jpg')`,
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: 'cover'
+        }}>
+          <div className='max-w-6xl mx-auto grid gap-6 grid-cols-3'>
+            <div className='col-span-2 flex justify-between gap-5 items-center'>
+              {[1, 2, 3].map((e, idx) => {
+                return (
+                  <div className='py-16 bg-gray-400 px-10 opacity-80 border border-gray-500'>
+                    <p className='text-5xl font-bold text-red-500'>230</p>
+                    <p>Satisfied Customers</p>
+                  </div>
+                )
+              })}
+            </div>
+            <div className='space-y-5 text-white font-semibold'>
+              <h4>Stay Update With Us</h4>
+              <p>Dried quick round it or order. Add past see west felt did any. Say out noise you taste merry plate you share. My resolve arrived is we chamber be removal.</p>
+              <input type="text" className='w-full focus:outline-none border border-gray-500 py-2 px-3' />
+            </div>
+          </div>
+        </section>
+
+        {/* center section */}
+        <section className='pt-32 pb-20'>
+          <div className='max-w-md mx-auto space-y-3'>
+            <h4 className='text-3xl text-red-500 text-center font-bold'>HOW WE WORK</h4>
+            <p className='text-xl text-center tracking-wide'>Checkout Our Amazing Working Process</p>
+          </div>
+        </section>
+        {/*buttons center section */}
+        <section className='pb-20'>
+          <div className='max-w-xl mx-auto flex gap-10 w-full items-center'>
+            {[1, 2, 3].map((e, idx) => {
+              return (
+                <button className='bg-red-500 w-full text-white font-semibold py-3  px-8'>read More</button>
+              )
+            })}
+          </div>
+        </section>
+        {/* second section with image is right here */}
+        <section>
+          <div className="grid grid-cols-2  pb-10">
+            <img src="https://validthemes.live/themeforest/dostart/assets/img/illustrations/3.svg"
+              className='w-[30rem] justify-self-end' alt="" />
+            <div className='space-y-6'>
+              <p className='text-2xl font-bold max-w-lg'>Engineered And Optimization By Conveying. Him Plate You Allow Built Grave.</p>
+        
+              <p className='max-w-lg'>Both rest of know draw fond post as. It agreement defective to excellent. Feebly do engage of narrow. Extensive repulsive belonging depending if promotion be zealously as. Preference inquietude ask now are dispatched led appearance. Small meant in so doubt hopes.</p>
+              <div className='space-y-6'>
+                {[1, 2, 3].map(() => {
+                  return (
+                    <div>
+                      <p>ROCKET FAST</p>
+                      <p>Elderly is detract tedious assured private</p>
+                    </div>
+                  )
+                })}
+              </div>
+              <button className='bg-red-500 text-white font-semibold py-3 rounded-full px-6'>read More</button>
+            </div>
+          </div>
+        </section> 
+
+          {/* center section */}
+          <section className='pt-32 pb-20'>
+          <div className='max-w-md mx-auto space-y-3'>
+            <h4 className='text-3xl text-red-500 text-center font-bold'>INNOVATIVE TEAM</h4>
+            <p className='text-xl text-center tracking-wide'>Meet Our Awesome And Expert Team Members</p>
+          </div>
+        </section> 
+
+        {/* innovation team */}
+        <section>
+        <div className='max-w-6xl mx-auto grid grid-cols-3'>
+         {[1,2,3].map((e,idx) => {
+          return (
+            <div>
+              
+            </div>
+          )
+         })}
+        </div>
+        </section>
+      </main>
     </>
   )
 }
